@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Dashboard</title>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script>
+        console.log("Dashboard HTML loaded!");
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar / Contacts List -->
+        <div class="sidebar">
+            <div class="header">
+                <div class="user-img">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-info">
+                    <h3 id="current-user">Welcome</h3>
+                    <p>Online</p>
+                </div>
+                <div class="actions">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+
+            <!-- Search Box -->
+            <div class="search-container">
+                <div class="input">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search users...">
+                </div>
+                <button id="search-btn" class="search-btn">
+                    <i class="fas fa-search"></i> Find
+                </button>
+            </div>
+
+            <!-- Search Results Display Area -->
+            <div id="search-results" class="search-results">
+                <!-- Results will be displayed here -->
+            </div>
+
+            <!-- Contacts -->
+            <div class="contacts-list">
+                <h2>Recent Chats</h2>
+                <div class="no-chats">
+                    <p>No chats yet.</p>
+                    <p>Search for users to start chatting!</p>
+                </div>
+                <!-- Chats will be listed here -->
+            </div>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-area">
+            <div class="chat-header">
+                <div class="chat-with">
+                    <p>Select a user to start chatting</p>
+                </div>
+            </div>
+
+            <div class="chat-messages">
+                <div class="welcome-message">
+                    <div class="welcome-content">
+                        <h2>Welcome to the Chat App!</h2>
+                        <p>Search for users to start chatting</p>
+                        <p>Your messages are private and secure</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="input-actions">
+                    <i class="fas fa-smile"></i>
+                    <i class="fas fa-paperclip"></i>
+                </div>
+                <input type="text" placeholder="Type a message..." disabled>
+                <div class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html> 

@@ -1,0 +1,60 @@
+{
+  "chats": [
+    {
+      "userId": "TETET",
+      "contactId": "faf",
+      "lastMessage": "f",
+      "timestamp": "2025-04-13T00:17:54.2149921+05:30",
+      "isRead": false
+    },
+    {
+      "userId": "faf",
+      "contactId": "TETET",
+      "lastMessage": "f",
+      "timestamp": "2025-04-13T00:17:54.2149921+05:30",
+      "isRead": false
+    },
+    {
+      "userId": "faf",
+      "contactId": "NITISH",
+      "lastMessage": "GESGD",
+      "timestamp": "2025-04-14T00:45:47.3243658+05:30",
+      "isRead": false
+    },
+    {
+      "userId": "NITISH",
+      "contactId": "faf",
+      "lastMessage": "GESGD",
+      "timestamp": "2025-04-14T00:45:47.3243658+05:30",
+      "isRead": true
+    },
+    {
+      "userId": "NITISH",
+      "contactId": "TETET",
+      "lastMessage": "fwaff",
+      "timestamp": "2025-04-14T00:20:52.550022+05:30",
+      "isRead": true
+    },
+    {
+      "userId": "TETET",
+      "contactId": "NITISH",
+      "lastMessage": "fwaff",
+      "timestamp": "2025-04-14T00:20:52.550022+05:30",
+      "isRead": false
+    },
+    {
+      "userId": "user1",
+      "contactId": "NITISH",
+      "lastMessage": "kya haal h",
+      "timestamp": "2025-06-01T11:53:16.6642313+05:30",
+      "isRead": false
+    },
+    {
+      "userId": "NITISH",
+      "contactId": "user1",
+      "lastMessage": "kya haal h",
+      "timestamp": "2025-06-01T11:53:16.6642313+05:30",
+      "isRead": true
+    }
+  ]
+}

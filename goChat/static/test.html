@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Redirect</title>
+</head>
+<body>
+    <h1>Testing Redirect to Dashboard</h1>
+    <p>This page will redirect to the dashboard in 3 seconds.</p>
+    <button onclick="testRedirect()">Test Redirect Now</button>
+    <button onclick="testLocalStorage()">Test LocalStorage</button>
+    <button onclick="clearLocalStorage()">Clear LocalStorage</button>
+    
+    <div id="result" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;"></div>
+    
+    <script>
+        // Helper function to display results
+        function showResult(text) {
+            document.getElementById('result').innerHTML = text;
+        }
+        
+        // Test redirect function
+        function testRedirect() {
+            showResult("Redirecting to dashboard...");
+            // Store dummy user data
+            const userData = { userId: "testuser" };
+            localStorage.setItem('currentUser', JSON.stringify(userData));
+            
+            setTimeout(() => {
+                // Try different methods
+                try {
+                    //window.location.href = 'http://localhost:8080/dashboard';
+                    //window.location.replace('http://localhost:8080/dashboard');
+                    document.location = 'http://localhost:8080/dashboard';
+                } catch (e) {
+                    showResult("Error: " + e.message);
+                }
+            }, 1000);
+        }
+        
+        // Test localStorage function
+        function testLocalStorage() {
+            // Store dummy user data
+            const userData = { userId: "testuser" };
+            localStorage.setItem('currentUser', JSON.stringify(userData));
+            showResult("LocalStorage set with: " + JSON.stringify(userData));
+        }
+        
+        // Clear localStorage function
+        function clearLocalStorage() {
+            localStorage.removeItem('currentUser');
+            showResult("LocalStorage cleared!");
+        }
+    </script>
+</body>
+</html> 
